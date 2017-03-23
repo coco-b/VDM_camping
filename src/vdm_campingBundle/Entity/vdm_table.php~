@@ -1,0 +1,11 @@
+<?php
+
+namespace vdm_campingBundle\Entity;
+
+/**
+ * vdm_table
+ */
+class vdm_table
+{
+    
+}

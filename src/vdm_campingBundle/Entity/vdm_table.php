@@ -7,8 +7,9 @@ namespace vdm_campingBundle\Entity;
  */
 class vdm_table
 {
+    
     /**
-     * @var int
+     * @var integer
      */
     private $id;
 
@@ -30,18 +31,13 @@ class vdm_table
     /**
      * @var string
      */
-    private $genre;
-
-    /**
-     * @var string
-     */
     private $author;
 
 
     /**
      * Get id
      *
-     * @return int
+     * @return integer
      */
     public function getId()
     {
@@ -121,30 +117,6 @@ class vdm_table
     }
 
     /**
-     * Set genre
-     *
-     * @param string $genre
-     *
-     * @return vdm_table
-     */
-    public function setGenre($genre)
-    {
-        $this->genre = $genre;
-
-        return $this;
-    }
-
-    /**
-     * Get genre
-     *
-     * @return string
-     */
-    public function getGenre()
-    {
-        return $this->genre;
-    }
-
-    /**
      * Set author
      *
      * @param string $author
@@ -168,4 +140,3 @@ class vdm_table
         return $this->author;
     }
 }
-
