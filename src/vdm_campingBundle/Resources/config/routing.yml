@@ -1,0 +1,3 @@
+vdm.camping_homepage:
+    path:     /
+    defaults: { _controller: vdm_campingBundle:Default:index }
