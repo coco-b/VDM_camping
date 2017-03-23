@@ -1,0 +1,24 @@
+vdm_table_index:
+    path:     /
+    defaults: { _controller: "vdm_campingBundle:vdm_table:index" }
+    methods:  GET
+
+vdm_table_show:
+    path:     /{id}/show
+    defaults: { _controller: "vdm_campingBundle:vdm_table:show" }
+    methods:  GET
+
+vdm_table_new:
+    path:     /new
+    defaults: { _controller: "vdm_campingBundle:vdm_table:new" }
+    methods:  [GET, POST]
+
+vdm_table_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "vdm_campingBundle:vdm_table:edit" }
+    methods:  [GET, POST]
+
+vdm_table_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "vdm_campingBundle:vdm_table:delete" }
+    methods:  DELETE
