@@ -1,0 +1,16 @@
+vdm_campingBundle\Entity\categorie:
+    type: entity
+    table: null
+    repositoryClass: vdm_campingBundle\Repository\categorieRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        categorie:
+            type: string
+            length: 255
+            unique: true
+    lifecycleCallbacks: {  }
