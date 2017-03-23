@@ -1,3 +1,7 @@
+vdm.camping_vdm_table:
+    resource: "@vdm_campingBundle/Resources/config/routing/vdm_table.yml"
+    prefix:   /vdm_table
+
 vdm.camping_homepage:
     path:     /
     defaults: { _controller: vdm_campingBundle:Default:index }
