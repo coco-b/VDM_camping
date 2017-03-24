@@ -4,15 +4,15 @@
 
 
 
-    <div class="container container-custom">
+    <div class="container">
         {% for vdm_table in vdm_tables %}
 
-        <div class="row row-custom">
+        <div class="row">
             <div class="col-xs-12">
                 <h1>Votre VDM du jour ...</h1>
             </div>
         </div>
-        <div class="row row-custom">
+        <div class="row">
             <div class="col-xs-6 vue"><a href="{{ path('vdm_table_show', { 'id': vdm_table.id }) }}">{{ vdm_table.id }}</a>
                 {{ vdm_table.title }}
             </div>
@@ -20,14 +20,14 @@
             </div>
         </div>
 
-        <div class="row row-custom">
-            <div class="col-xs-6 time">{% if vdm_table.date %}{{ vdm_table.date|date('Y-m-d H:i:s') }}
+        <div class="row">
+            <div class="col-xs-6">{% if vdm_table.date %}{{ vdm_table.date|date('Y-m-d H:i:s') }}
             </div>
-            <div class="col-xs-6 time">{% endif %}
+            <div class="col-xs-6">{% endif %}
                     {{ vdm_table.author }}
             </div>
         </div>
-        <div class="row row-custom">
+        <div class="row">
             <div class="col-xs-2">
                 <a class="btn btn-default" role="button" href="{{ path('vdm_table_show', { 'id': vdm_table.id }) }}">show</a>
             </div>
@@ -38,7 +38,7 @@
 
         {% endfor %}
 
-        <div class="row row-custom">
+        <div class="row">
             <div class="col-xs-4">
                 <a class="btn btn-default" role="button" href="{{ path('vdm_table_new') }}">Votre nouvelle VDM</a>
             </div>
