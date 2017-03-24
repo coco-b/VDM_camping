@@ -2,23 +2,26 @@
 
 {% block body %}
     <h1>Creer votre VDM</h1>
-<div class="row">
-    <div class="col-xs-3">
+<div class="row row_custom">
+
+    <div class="col-xs-offset-1 col-xs-2 bloc">
     {{ form_start(form) }}
     </div>
-    <div class="col-xs-3">
+
+    <div class="col-xs-offset-2 col-xs-2 bloc">
         {{ form_widget(form) }}
     </div>
-    
+
+    <div class="col-xs-offset-2 col-xs-2 bloc">
         <input type="submit" value="Create" />
-    <div class="col-xs-3">
+    </div>
+
+    <div class="col-offset-2 col-xs-1">
     {{ form_end(form) }}
     </div>
-    <div class="col-xs-3">
-    <ul>
-        <li>
-            <a href="{{ path('vdm_table_index') }}">Retour à la liste</a>
-        </li>
-    </ul>
+    
+    <div class="col-offset-6 col-xs-6 ">
+    <a class="btn btn-default" role="button" href="{{ path('vdm_table_index') }}">Retour à la liste</a>
     </div>
+</div>
 {% endblock %}
