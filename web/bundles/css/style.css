@@ -1,12 +1,12 @@
 body {
 
     background-image: url("../img/dessin-camping-121.gif");
-    background-position: right center;
+    background-position: 100% 80%;
     background-repeat: no-repeat;
     background-size: 40%;
+    background-attachment: fixed;
 
 }
-
 
 /* BASE-html */
 
@@ -59,6 +59,9 @@ header {
     margin-left:50px;
 }
 
+*{
+    border:1px solid red;
+}
 
 
 /* NEW */
