@@ -22,7 +22,7 @@ class vdm_tableController extends Controller
 
         $vdm_tables = $em->getRepository('vdm_campingBundle:vdm_table')->findAll();
 
-        return $this->render('vdm_table/index.html.twig', array(
+        return $this->render('@vdm_camping/Default/index.html.twig', array(
             'vdm_tables' => $vdm_tables,
         ));
     }
@@ -45,7 +45,7 @@ class vdm_tableController extends Controller
             return $this->redirectToRoute('vdm_table_show', array('id' => $vdm_table->getId()));
         }
 
-        return $this->render('vdm_table/new.html.twig', array(
+        return $this->render('@vdm_camping/vdm_table/new.html.twig', array(
             'vdm_table' => $vdm_table,
             'form' => $form->createView(),
         ));
@@ -59,7 +59,7 @@ class vdm_tableController extends Controller
     {
         $deleteForm = $this->createDeleteForm($vdm_table);
 
-        return $this->render('vdm_table/show.html.twig', array(
+        return $this->render('@vdm_camping/vdm_table/show.html.twig', array(
             'vdm_table' => $vdm_table,
             'delete_form' => $deleteForm->createView(),
         ));
@@ -81,7 +81,7 @@ class vdm_tableController extends Controller
             return $this->redirectToRoute('vdm_table_edit', array('id' => $vdm_table->getId()));
         }
 
-        return $this->render('vdm_table/edit.html.twig', array(
+        return $this->render('@vdm_camping/vdm_table/edit.html.twig', array(
             'vdm_table' => $vdm_table,
             'edit_form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
