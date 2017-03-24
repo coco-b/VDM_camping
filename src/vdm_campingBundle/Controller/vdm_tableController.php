@@ -22,7 +22,7 @@ class vdm_tableController extends Controller
 
         $vdm_tables = $em->getRepository('vdm_campingBundle:vdm_table')->findAll();
 
-        return $this->render('@vdm_camping/Default/index.html.twig', array(
+        return $this->render('@vdm_camping/vdm_table/index.html.twig', array(
             'vdm_tables' => $vdm_tables,
         ));
     }
