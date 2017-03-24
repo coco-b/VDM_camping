@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Vdm_tables list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Content</th>
+                <th>Date</th>
+                <th>Author</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for vdm_table in vdm_tables %}
+            <tr>
+                <td><a href="{{ path('vdm_table_show', { 'id': vdm_table.id }) }}">{{ vdm_table.id }}</a></td>
+                <td>{{ vdm_table.title }}</td>
+                <td>{{ vdm_table.content }}</td>
+                <td>{% if vdm_table.date %}{{ vdm_table.date|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ vdm_table.author }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('vdm_table_show', { 'id': vdm_table.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('vdm_table_edit', { 'id': vdm_table.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('vdm_table_new') }}">Create a new vdm_table</a>
+        </li>
+    </ul>
+{% endblock %}
