@@ -15,7 +15,7 @@ vdm_campingBundle\Entity\vdm_table:
         content:
             type: text
         date:
-            type: datetime
+            type: date
         author:
             type: string
             length: 255
