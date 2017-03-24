@@ -9,21 +9,21 @@
 
         <div class="row row-custom">
             <div class="col-xs-12">
-                <h1>Votre belle VDM ressemble à ...</h1>
+                <h1>Votre VDM du jour ...</h1>
             </div>
         </div>
         <div class="row row-custom">
-            <div class="col-xs-6"><a href="{{ path('vdm_table_show', { 'id': vdm_table.id }) }}">{{ vdm_table.id }}</a>
+            <div class="col-xs-6 vue"><a href="{{ path('vdm_table_show', { 'id': vdm_table.id }) }}">{{ vdm_table.id }}</a>
                 {{ vdm_table.title }}
             </div>
-            <div class="col-xs-6">{{ vdm_table.content }}
+            <div class="col-xs-6 vue">{{ vdm_table.content }}
             </div>
         </div>
 
         <div class="row row-custom">
-            <div class="col-xs-6">{% if vdm_table.date %}{{ vdm_table.date|date('Y-m-d H:i:s') }}
+            <div class="col-xs-6 time">{% if vdm_table.date %}{{ vdm_table.date|date('Y-m-d H:i:s') }}
             </div>
-            <div class="col-xs-6">{% endif %}
+            <div class="col-xs-6 time">{% endif %}
                     {{ vdm_table.author }}
             </div>
         </div>

@@ -1,23 +1,59 @@
+
+
+
+/* HEADER */
 h1
 {
     font-family: 'Montserrat', sans-serif;
-
 }
+
 div
 {
-    border:2px solid red;
+
 }
 
-.container-custom {
+/* INDEX-html */
 
+.container-custom
+
+{
     margin:0;
     padding:0;
     width:100%
 }
 
-.row-custom {
+.row-custom
 
+{
     margin:0;
     padding:0;
     width: 100%;
+}
+
+.vue
+{
+
+    padding-top:50px;
+    padding-bottom:50px;
+
+    border:2px solid black;
+    radius:15px;
+}
+.time
+{
+    padding-top:20px;
+    padding-bottom:20px;
+    border:2px solid black;
+    radius:15px;
+
+
+}
+
+
+/* BASE-html */
+
+
+.nav-pills
+{
+    list-style-type:none;
 }
